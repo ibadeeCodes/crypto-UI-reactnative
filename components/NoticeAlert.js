@@ -17,7 +17,7 @@ const NoticeAlert = ({customStyling}) => {
     <LinearGradient
       colors={[COLORS.primary, COLORS.secondary]}
       style={{
-        marginTop: SIZES.padding,
+        marginTop: SIZES.padding - 5,
         paddingVertical: SIZES.radius,
         backgroundColor: COLORS.secondary,
         color: COLORS.white,

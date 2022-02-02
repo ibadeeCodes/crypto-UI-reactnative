@@ -13,6 +13,8 @@ const HeaderBar = ({right}) => {
         flexDirection: 'row',
         paddingVertical: SIZES.radius,
         alignItems: 'center',
+        // borderBottomColor: COLORS.lightGray,
+        // borderBottomWidth: 1,
       }}>
       <View style={{flex: 1, alignItems: 'flex-start'}}>
         <TouchableOpacity
