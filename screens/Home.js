@@ -184,7 +184,7 @@ const Home = ({navigation}) => {
       <View style={{paddingBottom: 100}}>{renderHeader()}</View>
       <View>{renderPriceAlert()}</View>
       <View>{renderNoticeAlert()}</View>
-      <View>{renderTransactionHistory()}</View>
+      <View style={{marginBottom: 80}}>{renderTransactionHistory()}</View>
     </ScrollView>
   );
 };

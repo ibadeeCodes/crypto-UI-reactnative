@@ -4,6 +4,7 @@ import TransactionHistory from './TransactionHistory';
 import HeaderBar from './HeaderBar';
 import CurrencyLabel from './CurrencyLabel';
 import TextButton from './TextButton';
+import AboutCoin from './AboutCoin';
 
 export {
   PriceAlert,
@@ -12,4 +13,5 @@ export {
   HeaderBar,
   CurrencyLabel,
   TextButton,
+  AboutCoin,
 };

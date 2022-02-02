@@ -6,9 +6,8 @@ import {
 } from '@react-navigation/bottom-tabs';
 import LinearGradient from 'react-native-linear-gradient';
 
-import {Home} from '../screens';
+import {Home, Transaction} from '../screens';
 import {COLORS, FONTS, icons} from '../constants';
-import Test from '../screens/Test';
 
 const Tab = createBottomTabNavigator();
 
@@ -102,7 +101,7 @@ const Tabs = () => {
       />
       <Tab.Screen
         name="Transaction"
-        component={Home}
+        component={Transaction}
         options={{
           tabBarIcon: ({focused}) => (
             <Image
@@ -150,7 +149,7 @@ const Tabs = () => {
       />
       <Tab.Screen
         name="Settings"
-        component={Test}
+        component={Home}
         options={{
           tabBarIcon: ({focused}) => (
             <View style={{alignItems: 'center', justifyContent: 'center'}}>

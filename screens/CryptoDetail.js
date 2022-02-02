@@ -10,7 +10,14 @@ import {
 } from 'react-native';
 import {VictoryChart, VictoryLine, VictoryScatter} from 'victory-native';
 import {COLORS, dummyData, FONTS, icons, images, SIZES} from '../constants';
-import {HeaderBar, CurrencyLabel, TextButton, NoticeAlert} from '../components';
+import {
+  HeaderBar,
+  CurrencyLabel,
+  TextButton,
+  NoticeAlert,
+  AboutCoin,
+  PriceAlert,
+} from '../components';
 import {VictoryCustomTheme} from '../styles';
 
 const CryptoDetail = ({navigation, route}) => {
@@ -265,8 +272,8 @@ const CryptoDetail = ({navigation, route}) => {
             <Image
               source={icons.right_arrow}
               style={{
-                height: 20,
-                width: 20,
+                height: 18,
+                width: 18,
                 marginLeft: SIZES.radius,
               }}
             />
@@ -276,7 +283,12 @@ const CryptoDetail = ({navigation, route}) => {
             customButtonStyle={{marginTop: SIZES.radius, height: 45}}
           />
         </View>
-        <NoticeAlert customStyling={{marginBottom: 15}} />
+        <AboutCoin
+          customStyling={{marginBottom: 15}}
+          coin={currenctCurrency?.currency}
+          description={currenctCurrency?.description}
+        />
+        <PriceAlert customStyling={{marginBottom: SIZES.radius}} />
       </ScrollView>
     </SafeAreaView>
   );
