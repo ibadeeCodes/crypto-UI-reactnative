@@ -24,4 +24,5 @@ $ npx react-native run-android
 
 ![Screenshot](prototype.jpg)
 
-
+## Prototype reference:
+[Concept](https://dribbble.com/shots/14896748-Cryptocoin-App-concept)
