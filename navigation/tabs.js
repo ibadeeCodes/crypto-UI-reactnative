@@ -18,7 +18,6 @@ const TabBarCustomButton = ({children, onPress, ...props}) => {
         top: -25,
         alignItems: 'center',
         justifyContent: 'center',
-
         ...styles.shadow,
       }}
       onPress={onPress}>
